@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://reparaciondeguantesdeacero.com/sitemap.xml
