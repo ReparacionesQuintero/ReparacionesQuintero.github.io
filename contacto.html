@@ -43,60 +43,58 @@
         </div>
     </header>
 
-    <!-- Contact Section -->
-    <section class="section">
-        <div class="container">
-            <div class="contact-wrapper" style="grid-template-columns: 1fr 1fr; gap: 4rem;">
+    <!-- Contact Form -->
+<form 
+    action="https://formspree.io/f/mdkqdndv"
+    method="POST"
+    class="contact-form"
+    style="background: var(--card-bg); padding: 2rem; border-radius: 1rem; border: 1px solid var(--border-color);"
+>
+    <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">Envíenos un Mensaje</h2>
 
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <h2 class="section-title text-left">Información de Contacto</h2>
-                    <p class="lead">Envíenos sus dudas o comentarios, con gusto las responderemos.</p>
+    <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div class="form-group">
+            <label for="nombre">Nombre <span style="color: var(--accent-color);">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Su Nombre" required>
+        </div>
 
-                    <div class="contact-item" style="margin-top: 2rem;">
-                        <i class="fas fa-user"></i>
-                        <div>
-                            <strong>Gerente</strong>
-                            <span>Gerardo Quintero Echeverry</span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>Teléfono / Celular</strong>
-                            <span>+57 3026697161</span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <strong>Correo Electrónico</strong>
-                            <span>reparacionesquintero20@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <strong>Ubicación</strong>
-                            <span>Carrera 1 norte #73-63, Cali - Colombia</span>
-                        </div>
-                    </div>
-                </div>
+        <div class="form-group">
+            <label for="apellido">Apellido <span style="color: var(--accent-color);">*</span></label>
+            <input type="text" id="apellido" name="apellido" placeholder="Su Apellido" required>
+        </div>
+    </div>
 
-                <!-- Contact Form -->
-<form action="https://formspree.io/f/mdkqdndv" method="POST">
-  <label>Nombre</label>
-  <input type="text" name="nombre" required>
+    <div class="form-group">
+        <label for="telefono">Teléfono Celular <span style="color: var(--accent-color);">*</span></label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Su Número de Celular" required>
+    </div>
 
-  <label>Email</label>
-  <input type="email" name="email" required>
+    <div class="form-group">
+        <label for="email">Correo Electrónico <span style="color: var(--accent-color);">*</span></label>
+        <input type="email" id="email" name="email" placeholder="Su Correo Electrónico" required>
+    </div>
 
-  <label>Mensaje</label>
-  <textarea name="mensaje" required></textarea>
+    <div class="form-group">
+        <label for="producto">Seleccione uno <span style="color: var(--accent-color);">*</span></label>
+        <select id="producto" name="producto" class="form-select" required
+            style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 0.5rem;">
+            <option value="" disabled selected>-- Seleccione una opción --</option>
+            <option value="Reparar Guante">Reparar Guante</option>
+            <option value="Cambio Pulso">Cambio Pulso</option>
+            <option value="Compra de guante">Compra de guante</option>
+            <option value="Compra de Cuchillería">Compra de Cuchillería</option>
+            <option value="Compra de Piedras/Tablas">Compra de Piedras/Tablas</option>
+            <option value="Otro">Otro</option>
+        </select>
+    </div>
 
-  <button type="submit">Enviar</button>
+    <div class="form-group">
+        <label for="mensaje">Comentario o Pregunta <span style="color: var(--accent-color);">*</span></label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje aquí..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary full-width">Enviar Mensaje</button>
 </form>
-
             </div>
         </div>
     </section>
@@ -117,6 +115,7 @@
 </body>
 
 </html>
+
 
 
 
